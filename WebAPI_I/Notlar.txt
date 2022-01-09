@@ -1,0 +1,38 @@
+﻿Servis Nedir?
+
+Tarihçe?
+CORBA, Remoting, XML Web Servisleri, WCF(Windows Communication Foundatiton)
+RESTFull Servisler(WebAPI)
+
+RestFull Service?
+REST ? Represantational Satate Transfer
+
+Restfull Servisler => http
+
+SOA => Service Oriented Architecture
+WCF => SOAP(Simple Object Access Protocol)XML
+
+JSON(Javascript Object Notation)
+
+Verbs
+ HttpGet => SELECT
+ HttpPost => INSERT
+ HttpPut => UPDATE
+ HttpDelete => DELETE
+ HttpPatch => Partial Update
+
+ scaffold-dbcontext "Data source=.; initial catalog=KutuphaneDB; integrated security=true" Microsoft.EntityFrameworkCore.SqlServer -output Model
+
+ PATCH kullanımı icin
+ nuget =>
+ 1-Microsoft.AspNetCore.JsonPatch
+ 2-Microsoft.AspNetCore.Mvc.NewtonsoftJson
+
+ [
+  {   
+    "path": "KitapAdi",
+    "op": "replace",
+    "value":"Star Wars"
+  }
+]
+
